@@ -7,7 +7,7 @@ echo "Gunicorn started successfully!"
  
 # Start Daphne for ASGI
 echo "Starting Daphne..."
-daphne backend.asgi:application
+daphne -p 8000 --bind 0.0.0.0 backend.asgi:application
  
 # Notify Daphne has started
 echo "Daphne started successfully!"
