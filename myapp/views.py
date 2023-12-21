@@ -502,7 +502,7 @@ import requests  # Import requests module
 from django.core.files.base import ContentFile
 from asgiref.sync import async_to_sync
 from channels.layers import get_channel_layer
-access_token='EAAFSezp24bEBOZClnAdjpDdQkR5VbiBlZBpasajiAhqmBBAU9dRzv8yaPMiywHgmSfcll2JidnlevI6MVjBiqn2Qqua8q4m6BhhfllM7vgWc072d5TpAIJpLcC4vpDFNbborjjZBFHjafvdJeLh4GIT8qnLQRjKqKA7JKbJeVRhQQIbiCXZBXcjPRSReU5meZCTDCwRI69ZArd1bqnUOP8GEzZClxQMafN4VzzN7veT0YYZD'
+access_token='EAAJ0ZApM92koBO4lpoQIhKm7mu6bTIXyQMRotFyrxXjUdp8Oo5y1wOPzANjtfCZBABW5ydf2k1wwid4NvYvI29iJ3xCIZB7SbjcebNq8yIvsZB8LybJZBxbukyYNy2mOIfc7NVqdGpF90mSE33lniMiZAE22y73bAfHNtjcpWTh5SS9UyRICqL7rRZBTNHStNeLzpIBdMn9h9ti7Yt6pZCL7z2yTSvZAsElFEgMm8dWOe45gZD'
 @csrf_exempt
 def whatsapp_webhook(request):
     if request.method == 'GET':
@@ -838,7 +838,7 @@ def download_media(media_url):
 
 def mark_message_as_read( message_id):
     #access_token = 'EAAFSezp24bEBO8DFtDmD8Bzevm86reUpawPfGbFZAJqw4y6en3XtEUuu1zDhY8AqhQqvDXLFFfUXSanqzCmyQpOOAjFpZB1wBf0XwRviF6XhGeBHJv9zorVOOWs7LsJVuVdpmYAefuGdo3PHZCdwbDMzR6b5BDxY15ZAtGKHmIlgN6aq685DSrVMZAuO3d9nT0zeXHd8PDeXKB4I2sN0DlDZBrhKT3yVUHDIiOGPXJfzoZD'
-    phone_number_id= '189179114270760'
+    phone_number_id= '120586281145678'
     url = f'https://graph.facebook.com/v17.0/{phone_number_id}/messages'
     headers = {
         'Authorization': f'Bearer {access_token}',
@@ -864,7 +864,7 @@ def send_acknowledgment(recipient_phone, message_type):
     
     # Replace this with your logic to send the acknowledgment using the WhatsApp API
     #auth_token = 'EAAFSezp24bEBO8DFtDmD8Bzevm86reUpawPfGbFZAJqw4y6en3XtEUuu1zDhY8AqhQqvDXLFFfUXSanqzCmyQpOOAjFpZB1wBf0XwRviF6XhGeBHJv9zorVOOWs7LsJVuVdpmYAefuGdo3PHZCdwbDMzR6b5BDxY15ZAtGKHmIlgN6aq685DSrVMZAuO3d9nT0zeXHd8PDeXKB4I2sN0DlDZBrhKT3yVUHDIiOGPXJfzoZD'
-    phone_number_id= '189179114270760'
+    phone_number_id= '120586281145678'
     api_url = f'https://graph.facebook.com/v17.0/{phone_number_id}/messages'
     
     headers = {
